@@ -1,0 +1,23 @@
+
+  <h5>Simple Interest Calculator</h5>
+
+<label for="p">Principle Amount</label>
+<input type="number" placeholder='0'  [(ngModel)]='P'>
+<br>
+<label for="r">Rate of Interest</label>
+<input type="number" placeholder='0'  [(ngModel)]='R'>
+<br>
+<label for="t">Time (in months)</label>
+<input type="number" placeholder='0' [(ngModel)]='T'>
+<br><br>
+
+<button type="button" class="btn btn-warning btn-block" (click)='ngOnInit()'>Calculate SI</button>
+<br><br>
+
+<label for="p">Simple Interest</label>
+<input type="number" placeholder='0'  [(ngModel)]='SI'>
+<br>
+
+
+
+{{'Amount'}} {{ A | currency:'INR' }}
